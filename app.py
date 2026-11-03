@@ -25,7 +25,7 @@ else:
 token_actual = f"{fecha_str}_{turno}"
 
 # 2. Tu link de Qualtrics
-url_base = "https://tu-encuesta.qualtrics.com/jfe/form/SV_tuEncuestaID"
+url_base = "https://qualtricsxmp2wfl4t7f.qualtrics.com/jfe/form/SV_6GaFRWXENQfYMWa"
 url_completa = f"{url_base}?token={token_actual}"
 
 st.subheader(f"Fecha: {fecha_str}")

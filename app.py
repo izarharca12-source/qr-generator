@@ -3,7 +3,7 @@ import qrcode
 from datetime import datetime
 import io
 
-st.title("Generador Automático de QR por Turnos (Cada 8 Horas)")
+st.title("Generador Automático de QR por Turnos (Cada 8 Horas) ACTUALIZAR QR ANTES DE ESCANEAR")
 
 # 1. Obtener la hora actual y calcular el bloque de 8 horas
 ahora = datetime.now()
@@ -25,7 +25,7 @@ else:
 token_actual = f"{fecha_str}_{turno}"
 
 # 2. Tu link de Qualtrics
-url_base = "https://qualtricsxmp2wfl4t7f.qualtrics.com/jfe/form/SV_6GaFRWXENQfYMWa"
+url_base = "https://qualtricsxmp2wfl4t7f.qualtrics.com/jfe/form/SV_6kWwskZMQENa3k2"
 url_completa = f"{url_base}?token={token_actual}"
 
 st.subheader(f"Fecha: {fecha_str}")

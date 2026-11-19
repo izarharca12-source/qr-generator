@@ -11,15 +11,15 @@ fecha_str = ahora.strftime("%Y-%m-%d")
 hora_actual = ahora.hour
 
 # Definir el turno según la hora del día (0 a 8 hrs, 8 a 16 hrs, 16 a 24 hrs)
-if 0 <= hora_actual < 8:
+if 6 <= hora_actual < 14:
     turno = "turno_nocturno"
-    bloque_desc = "Madrugada (00:00 - 06:00)"
-elif 8 <= hora_actual < 16:
+    bloque_desc = "Turno 1"
+elif 14 <= hora_actual < 22:
     turno = "turno_matutino"
-    bloque_desc = "Mañana (06:00 - 14:00)"
+    bloque_desc = "Turno 2"
 else:
     turno = "turno_vespertino"
-    bloque_desc = "Tarde/Noche (14:00 - 24:00)"
+    bloque_desc = "Turno 3"
 
 # Token único que cambia cada 8 horas combinando fecha y turno
 token_actual = f"{fecha_str}_{turno}"

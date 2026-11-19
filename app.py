@@ -29,8 +29,8 @@ url_base = "https://qualtricsxmp2wfl4t7f.qualtrics.com/jfe/form/SV_6kWwskZMQENa3
 url_completa = f"{url_base}?token={token_actual}"
 
 st.subheader(f"Fecha: {fecha_str}")
-st.info(f"Bloque activo: **{bloque_desc}**")
-st.write(f"Enlace oculto en el QR: `{url_completa}`")
+st.info(f"TURNO: **{bloque_desc}**")
+st.write(f"Confirma que el turno sea el correcto")
 
 # 3. Generar la imagen del QR
 qr = qrcode.QRCode(
